@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", system-ui;
+}
+.wrap{
+    background-image: url(./night-sky-background.png);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text p{
+    color: #e0def4;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+}
+.images{
+    border-radius: 20px;
+    width: 50%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app{
+    border: 3px solid #e0def4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#1e1e2e;
+    width: 80%;
+    height: 80%;
+}
+.btns{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.btns button{
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.btns button:hover{
+    animation-name: grow;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes grow {
+    from{
+        transform: scale(1.0);
+    }
+    to{
+        transform: scale(1.05);
+    }
+}
